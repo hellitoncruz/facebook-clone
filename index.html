@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialBook</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/19a5e40042.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-left">
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><img src="images/notification.png" ></li>
+                <li><img src="images/inbox.png" ></li>
+                <li><img src="images/video.png" ></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+
+            <div class="search-box">
+                <img src="images/search.png" alt="">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/profile-pic.png" alt="">
+            </div>
+        </div>
+
+        <!---------------- settings-menu ---------------->
+        <div class="settings-menu">
+
+            <div id="dark-btn" class="dark-btn-on">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="">
+                    <div>
+                        <p>Helliton Cruz</p>
+                        <a href="#">Ver seu perfil</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png" alt="">
+                    <div>
+                        <p>Dar Feedback</p>
+                        <a href="#">Ajude-nos a melhorar design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img src="images/setting.png" class="settings-icon" alt="">
+                    <a href="#">Confugurações e Privacidade <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/help.png" class="settings-icon" alt="">
+                    <a href="#">Ajuda e Suporte <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/display.png" class="settings-icon" alt="">
+                    <a href="#">Tela e Acessibilidade <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/logout.png" class="settings-icon" alt="">
+                    <a href="#">Sair <img src="images/arrow.png" width="10px"></a>
+                </div>
+
+
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <!---------------- left-sidebar-------------------->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="images/news.png">Últimas Notícias</a>
+                <a href="#"><img src="images/friends.png">Amigos</a>
+                <a href="#"><img src="images/group.png">Grupo</a>
+                <a href="#"><img src="images/marketplace.png">Marketplace</a>
+                <a href="#"><img src="images/watch.png">Assistir</a>
+                <a href="#">Ver mais</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Seus atalhos</p>
+                <a href="#"><img src="images/shortcut-1.png">Desenvolvedor Web</a>
+                <a href="#"><img src="images/shortcut-2.png">Web Designer</a>
+                <a href="#"><img src="images/shortcut-3.png">Full Stack</a>
+                <a href="#"><img src="images/shortcut-4.png">Website Experts</a>
+            </div>
+        </div>
+        <!---------------- main content-------------------->
+        <div class="main-content">
+            
+            <div class="story-gallery">
+                
+                <div class="story story1">
+                    <img src="images/upload.png">
+                    <p>Criar Story</p>
+                </div>
+            
+            <div class="story story2">
+                    <img src="images/member-1.png">
+                    <p>João Dória</p>
+            </div>
+            <div class="story story3">
+                    <img src="images/member-2.png">
+                    <p>Airton Senna</p>
+            </div>
+            <div class="story story4">
+                    <img src="images/member-3.png">
+                    <p>Julio Cocielo</p>
+            </div>
+            <div class="story story5">
+                    <img src="images/member-4.png">
+                    <p>Carlos Silva</p>
+            </div>
+        </div>
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="">
+                    <div>
+                        <p>Helliton Cruz</p>
+                        <small class="small">Público <i class="fas fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="No que você está pensando, Helliton?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="images/live-video.png">Vídeo ao vivo</a> 
+                        <a href="#"><img src="images/photo.png">Foto/vídeo</a>
+                        <a href="#"><img src="images/feeling.png">Sentimento/atividade</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="">
+                    <div>
+                        <p>Helliton Cruz</p>
+                        <span>Junho 24 2021, 13:40 pm</span>
+                    </div>
+                    </div>
+                    <a href="#"><i class="fa fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">Inscreva-se em <span> @Easy Tutoriais</span> de num sei oq lá, mas o carinha é foda e tem um sotaque dahora.</p>
+                <img src="images/feed-image-1.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png" >120</div>
+                        <div><img src="images/comments.png" >32</div>
+                        <div><img src="images/share.png" >15</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>         
+                </div>
+
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="">
+                        <div>
+                            <p>Helliton Cruz</p>
+                            <span>Junho 24 2021, 13:40 pm</span>
+                        </div>
+                        </div>
+                        <a href="#"><i class="fa fa-ellipsis-v"></i></a>
+                    </div>
+    
+                    <p class="post-text">Curta e compartilhe vídeos com os amigos, marque <span> @dialetoestoico</span> no seu post do Instagram <a href="#">#EasyTutoriais #YoutubeChannel </a></p>
+                    <img src="images/feed-image-2.png" class="post-img">
+    
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like.png" >500</div>
+                            <div><img src="images/comments.png" >25</div>
+                            <div><img src="images/share.png" >10</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.png"><i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>         
+                </div>
+
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="">
+                        <div>
+                            <p>Helliton Cruz</p>
+                            <span>Junho 24 2021, 13:40 pm</span>
+                        </div>
+                        </div>
+                        <a href="#"><i class="fa fa-ellipsis-v"></i></a>
+                    </div>
+    
+                    <p class="post-text">Curta e compartilhe vídeos com os amigos, marque <span> @dialetoestoico</span> no seu post do Instagram <a href="#">#EasyTutoriais #YoutubeChannel </a></p>
+                    <img src="images/feed-image-3.png" class="post-img">
+    
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like.png" >38</div>
+                            <div><img src="images/comments.png" >18</div>
+                            <div><img src="images/share.png" >7</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.png"><i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>         
+                </div>
+
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="">
+                        <div>
+                            <p>Helliton Cruz</p>
+                            <span>Junho 24 2021, 13:40 pm</span>
+                        </div>
+                        </div>
+                        <a href="#"><i class="fa fa-ellipsis-v"></i></a>
+                    </div>
+    
+                    <p class="post-text">Curta e compartilhe vídeos com os amigos, marque <span> @dialetoestoico</span> no seu post do Instagram <a href="#">#EasyTutoriais #YoutubeChannel </a></p>
+                    <img src="images/feed-image-4.png" class="post-img">
+    
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like.png" >60</div>
+                            <div><img src="images/comments.png" >15</div>
+                            <div><img src="images/share.png" >4</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.png"><i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>         
+                </div>
+
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="">
+                        <div>
+                            <p>Helliton Cruz</p>
+                            <span>Junho 24 2021, 13:40 pm</span>
+                        </div>
+                        </div>
+                        <a href="#"><i class="fa fa-ellipsis-v"></i></a>
+                    </div>
+    
+                    <p class="post-text">Curta e compartilhe vídeos com os amigos, marque <span> @dialetoestoico</span> no seu post do Instagram <a href="#">#EasyTutoriais #YoutubeChannel </a></p>
+                    <img src="images/feed-image-5.png" class="post-img">
+    
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like.png" >30</div>
+                            <div><img src="images/comments.png" >5</div>
+                            <div><img src="images/share.png" >0</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.png"><i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>         
+                </div>
+
+                
+                <button type="button" class="load-more-btn">Carregar mais</button>
+
+
+        </div>
+        <!---------------- right-sidebar-------------------->
+        <div class="right-sidebar">
+
+            <div class="sidebar-title">
+                <h4>Eventos</h4>
+                <a href="#">Ver todos</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>Março</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mídia Social</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Willson Tech Park</p>
+                    <a href="#">Mais Informações</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>Junho</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mobile Marketing</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Willson Tech Park</p>
+                    <a href="#">Mais Informações</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Anúncios</h4>
+                <a href="#">Fechar</a>
+            </div>
+            <img src="images/advertisement.png" class="sidebar-ads">
+
+            <div class="sidebar-title">
+                <h4>Conversas</h4>
+                <a href="#">Esconder chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-1.png" alt="">
+                </div>
+                <p>Alison Mina</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-2.png" alt="">
+                </div>
+                <p>Jonas Feijão</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.png" alt="">
+                </div>
+                <p>Carlinhos Matruz</p>
+            </div>
+        </div>
+    </div>
+
+<div class="footer">
+    <p>Copyright 2021 - Helliton Cruz</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
